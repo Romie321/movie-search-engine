@@ -20,3 +20,5 @@ function MovieCard({ movie }) {
     </div>
   );
 }
+
+eport default MovieCard
