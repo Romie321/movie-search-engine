@@ -13,7 +13,7 @@ function Home() {
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     alert(searchQuery);
-    setSearchQuery("Next movie title...");
+    setSearchQuery("");
   };
 
   return (
@@ -31,12 +31,9 @@ function Home() {
         </button>
       </form>
       <div className="movie-grid">
-        {movies.map(
-          (movie) =>
-            movie.title.toLowerCase().startsWith(searchQuery) && (
-              <MovieCard movie={movie} key={movie.id} />
-            ),
-        )}
+        {movies.map((movie) => (
+          <MovieCard movie={movie} key={movie.id} />
+        ))}
       </div>
     </div>
   );
