@@ -10,7 +10,11 @@ function Home() {
     { id: 3, title: "The Matrix", release_date: "1998" },
   ];
 
-  const handleSearchSubmit = () => {};
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    alert(searchQuery);
+    setSearchQuery("Next movie title...");
+  };
 
   return (
     <div className="home">
