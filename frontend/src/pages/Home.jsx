@@ -19,6 +19,7 @@ function Home() {
           type="text"
           placeholder="Search for movies..."
           className="search-input"
+          value={searchQuery}
         />
         <button type="submit" className="search-button">
           Search
