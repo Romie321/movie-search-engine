@@ -8,6 +8,9 @@ function NavBar() {
         <Link to="/" className="navbar-link">
           Home
         </Link>
+        <Link to="/favorites" className="navbar-link">
+          Favorites
+        </Link>
       </div>
     </nav>
   );
