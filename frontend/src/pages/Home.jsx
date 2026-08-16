@@ -7,6 +7,8 @@ function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [movies, setMovies] = useState([]);
 
+  useEffect(() => {}, []);
+
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     alert(searchQuery);
