@@ -7,7 +7,14 @@ function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [movies, setMovies] = useState([]);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const loadPopularMovies = async () => {
+      try {
+        const popularMovies = await getPopularMovies();
+        setMovies(popularMovies);
+      }
+    }
+  }, []);
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
