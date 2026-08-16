@@ -16,6 +16,7 @@ function Home() {
         setMovies(popularMovies);
       } catch (err) {
       } finally {
+        setLoading(false);
       }
     };
   }, []);
