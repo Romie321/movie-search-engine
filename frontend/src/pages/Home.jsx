@@ -12,8 +12,10 @@ function Home() {
       try {
         const popularMovies = await getPopularMovies();
         setMovies(popularMovies);
+      } catch (err) {
+      } finally {
       }
-    }
+    };
   }, []);
 
   const handleSearchSubmit = (e) => {
