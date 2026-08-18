@@ -32,6 +32,7 @@ function Home() {
     try {
       const searchResults = await searchMovies(searchQuery);
       setMovies(searchResults);
+      setError(null);
     } catch (err) {
       console.log(err);
       setError("Sorry, failed to search movies...");
