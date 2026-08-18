@@ -29,6 +29,10 @@ function Home() {
     if (searchQuery.trim()) return;
     if (loading) return;
     setLoading(true);
+    try {
+    } catch (err) {
+    } finally {
+    }
   };
 
   return (
