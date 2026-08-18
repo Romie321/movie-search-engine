@@ -44,6 +44,7 @@ function Home() {
           Search
         </button>
       </form>
+      {loading ? <div className="loading">Loading...</div> : }
       <div className="movie-grid">
         {movies.map((movie) => (
           <MovieCard movie={movie} key={movie.id} />
