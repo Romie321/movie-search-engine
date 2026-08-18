@@ -32,6 +32,7 @@ function Home() {
     try {
     } catch (err) {
     } finally {
+      setLoading(false);
     }
   };
 
