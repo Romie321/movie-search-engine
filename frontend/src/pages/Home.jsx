@@ -31,6 +31,7 @@ function Home() {
     setLoading(true);
     try {
     } catch (err) {
+      setError("Sorry, failed to search movies...");
     } finally {
       setLoading(false);
     }
