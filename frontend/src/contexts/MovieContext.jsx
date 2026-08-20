@@ -4,4 +4,4 @@ const MovieContext = createContext();
 
 export const useMovieContext = () => useContext(MovieContext);
 
-export const MovieProvider = () => {};
+export const MovieProvider = ({ children }) => {};
