@@ -26,7 +26,7 @@ function Home() {
 
   const handleSearchSubmit = async (e) => {
     e.preventDefault();
-    if (searchQuery.trim()) return;
+    if (!searchQuery.trim()) return;
     if (loading) return;
     setLoading(true);
     try {
