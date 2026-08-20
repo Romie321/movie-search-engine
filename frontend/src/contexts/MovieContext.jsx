@@ -18,7 +18,7 @@ export const MovieProvider = ({ children }) => {
   }, [favorites]);
 
   const addFavorites = (movie) => {
-    setFavorites();
+    setFavorites((prev) => [...prev, movie]);
   };
   return <MovieContext.Provider>{children}</MovieContext.Provider>;
 };
