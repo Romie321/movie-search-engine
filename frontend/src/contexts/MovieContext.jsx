@@ -13,5 +13,8 @@ export const MovieProvider = ({ children }) => {
     if (storeFavs) setFavorites(JSON.parse(storedFavs));
   }, []);
 
+  useEffect(() => {
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+  }, [favorites]);
   return <MovieContext.Provider>{children}</MovieContext.Provider>;
 };
