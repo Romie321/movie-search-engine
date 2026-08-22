@@ -4,6 +4,16 @@ import { useMovieContext } from "../contexts/MovieContext";
 function Favorites() {
   const { favorites } = useMovieContext();
 
+  if (favorites) {
+    return (
+      <div className="movie-grid">
+        {favorites.map((movie) => (
+          <MovieCard movie={movie} key={movie.id} />
+        ))}
+      </div>
+    );
+  }
+
   return (
     <div className="favorites-empty">
       <h2>No Favorite movies found.</h2>
