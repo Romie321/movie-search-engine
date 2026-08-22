@@ -8,6 +8,7 @@ function MovieCard({ movie }) {
   function handleFavoriteClick(e) {
     e.preventDefault();
     if (favorite) removeFromFavorites(movie.id);
+    else addToFavoritew(movie);
   }
 
   return (
