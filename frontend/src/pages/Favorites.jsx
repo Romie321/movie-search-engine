@@ -1,4 +1,5 @@
 import "../css/Favorites.css";
+import { useMovieContext } from "../contexts/MovieContext";
 
 function Favorites() {
   return (
