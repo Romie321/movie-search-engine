@@ -6,10 +6,12 @@ function Favorites() {
 
   if (favorites) {
     return (
-      <div className="movie-grid">
-        {favorites.map((movie) => (
-          <MovieCard movie={movie} key={movie.id} />
-        ))}
+      <div className="favorites">
+        <div className="movie-grid">
+          {favorites.map((movie) => (
+            <MovieCard movie={movie} key={movie.id} />
+          ))}
+        </div>
       </div>
     );
   }
