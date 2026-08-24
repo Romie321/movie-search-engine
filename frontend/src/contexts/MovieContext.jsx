@@ -40,5 +40,3 @@ export const MovieProvider = ({ children }) => {
     <MovieContext.Provider value={value}>{children}</MovieContext.Provider>
   );
 };
-
-export { useMovieContext };
