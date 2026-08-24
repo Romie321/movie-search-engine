@@ -2,7 +2,7 @@ import { createContext, useState, useContext, useEffect } from "react";
 
 const MovieContext = createContext();
 
-export const useMovieContext = () => useContext(MovieContext);
+const useMovieContext = () => useContext(MovieContext);
 
 export const MovieProvider = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
@@ -10,7 +10,7 @@ export const MovieProvider = ({ children }) => {
   useEffect(() => {
     const storedFavs = localStorage.getItem("favorites");
 
-    if (storeFavs) setFavorites(JSON.parse(storedFavs));
+    if (storedFavs) setFavorites(JSON.parse(storedFavs));
   }, []);
 
   useEffect(() => {
@@ -40,3 +40,5 @@ export const MovieProvider = ({ children }) => {
     <MovieContext.Provider value={value}>{children}</MovieContext.Provider>
   );
 };
+
+export { useMovieContext };
