@@ -23,7 +23,16 @@ export const MovieProvider = ({ children }) => {
   }, [favorites]);
 
   const addFavorites = (movie) => {
-    setFavorites((prev) => [...prev, movie]);
+    setFavorites((prev) => {
+      if (prev.some((item) => item.id === movie.id)) {
+        return prev;
+      }
+      return [...prev, movie];
+    });
+  };
+
+  const addToFavorites = (movie) => {
+    addFavorites(movie);
   };
 
   const removeFromFavorites = (movieId) => {
@@ -37,6 +46,7 @@ export const MovieProvider = ({ children }) => {
   const value = {
     favorites,
     addFavorites,
+    addToFavorites,
     removeFromFavorites,
     isFavorite,
   };
