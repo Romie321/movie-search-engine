@@ -108,6 +108,8 @@
 }
 
 .movie-info .user-rating {
+  font-size: 0.9rem;
+  color: gold;
 }
 
 @media (max-width: 768px) {
