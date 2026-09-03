@@ -5,15 +5,25 @@ A simple and responsive React application that allows users to search for movies
 This project is in its early stages. I’m actively building out the core features, refining the UI, and documenting progress as I go. More updates coming soon.
 
 # 🚀 Features
-- Search for movies by title
+- Search for movies by title (search stays in the box, with debounce and a clear button)
 
 - Display movie posters, titles, release years, and descriptions
 
+- Dedicated movie details page (overview, genres, runtime, rating)
+
+- Save favorites locally and view them on the Favorites page
+
+- Genre filters and sorting (popularity, rating, newest, title)
+
+- Pagination and loading skeletons
+
+- Light / dark mode toggle
+
 - Responsive layout built with custom CSS
 
-- Clean component structure (SearchBar, MovieList, MovieCard, etc.)
+- Clean component structure (NavBar, MovieCard, Home, Favorites, MovieDetails)
 
-- API integration using fetch or axios
+- API integration using fetch (TMDB)
 
 - Error handling for empty searches or failed requests
 
@@ -24,7 +34,11 @@ This project is in its early stages. I’m actively building out the core featur
 
 - CSS
 
-- Movie API (OMDb or TMDB)
+- Vite
+
+- React Router
+
+- Movie API (TMDB)
 
 ## 📦 Installation & Setup
 bash
@@ -32,7 +46,7 @@ bash
 git clone https://github.com/Romie321/movie-search-engine.git
 
 ### # Navigate into the project folder
-cd movie-search-engine
+cd movie-search-engine/frontend
 
 ### # Install dependencies
 npm install
@@ -42,27 +56,33 @@ npm run dev
 ## 📁 Project Structure
 Code
 movie-search-engine/
-│── src/
-│   ├── components/
-│   │   ├── SearchBar.jsx
-│   │   ├── MovieList.jsx
-│   │   └── MovieCard.jsx
-│   ├── App.jsx
-│   ├── index.jsx
-│   └── styles/
-│       └── main.css
-│── public/
-│── package.json
+│── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── MovieCard.jsx
+│   │   │   ├── NavBar.jsx
+│   │   │   ├── Pagination.jsx
+│   │   │   └── MovieSkeletonGrid.jsx
+│   │   ├── contexts/
+│   │   │   ├── MovieContext.jsx
+│   │   │   └── ThemeContext.jsx
+│   │   ├── css/
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Favorites.jsx
+│   │   │   └── MovieDetails.jsx
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   └── package.json
+│── README.md
 ## 🔮 Future Improvements
-- Add a dedicated movie details page
+- Add screenshots of the current UI
 
-- Implement pagination or infinite scroll
+- Improve search + genre filtering together (filter across all pages, not only the current page)
 
-- Add loading skeletons for smoother UX
-
-- Include genre filters or sorting options
-
-- Add dark mode toggle
+- Optional infinite scroll instead of pagination
 
 ## 📸 Screenshots
 (To be added once UI is ready.)
@@ -81,4 +101,4 @@ This project helps me practice:
 - Building in public and documenting progress
 
 ## 🙌 Acknowledgements
-Thanks to OMDb/TMDB for providing the movie data API.
+Thanks to TMDB for providing the movie data API.

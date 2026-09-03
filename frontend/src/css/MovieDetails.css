@@ -1,0 +1,80 @@
+.movie-details {
+  border-radius: 12px;
+  background-color: var(--surface);
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem;
+  min-height: 70vh;
+}
+
+.details-back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.details-layout {
+  display: grid;
+  grid-template-columns: minmax(180px, 280px) 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.details-poster {
+  width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.details-info h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.details-year {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.details-tagline {
+  font-style: italic;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.details-meta {
+  margin-bottom: 1rem;
+}
+
+.details-overview {
+  max-width: 65ch;
+  margin-bottom: 1.5rem;
+}
+
+.details-favorite {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.details-favorite.active {
+  background-color: #555;
+}
+
+.details-status {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--muted);
+}
+
+@media (max-width: 700px) {
+  .details-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .details-poster {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}

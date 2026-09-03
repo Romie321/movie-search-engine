@@ -1,0 +1,16 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 1rem 0;
+}
+
+.pagination-btn {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.pagination-status {
+  color: var(--muted);
+}
