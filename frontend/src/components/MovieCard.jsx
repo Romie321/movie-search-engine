@@ -35,6 +35,7 @@ function MovieCard({ movie }) {
         <div className="movie-info">
           <h3>{movie.title}</h3>
           <p>{year}</p>
+          <p className="user-rating"></p>
         </div>
       </Link>
       <button
