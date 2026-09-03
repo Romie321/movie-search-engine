@@ -35,7 +35,7 @@ function MovieCard({ movie }) {
         <div className="movie-info">
           <h3>{movie.title}</h3>
           <p>{year}</p>
-          <p className="user-rating"></p>
+          <p className="user-rating">{movie.vote_average.toFixed(1)}/10</p>
         </div>
       </Link>
       <button
