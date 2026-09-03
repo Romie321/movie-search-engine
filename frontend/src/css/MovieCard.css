@@ -107,6 +107,9 @@
   font-size: 0.9rem;
 }
 
+.movie-info .user-rating {
+}
+
 @media (max-width: 768px) {
   .movie-card {
     font-size: 0.9rem;
