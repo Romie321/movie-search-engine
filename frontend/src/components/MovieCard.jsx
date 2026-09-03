@@ -36,18 +36,7 @@ function MovieCard({ movie }) {
           <h3>{movie.title}</h3>
           <p>{year}</p>
         </div>
-      </Link>
-      <button
-        type="button"
-        className={`favorite-btn ${favorite ? "active" : ""}`}
-        onClick={handleFavoriteClick}
-        aria-pressed={favorite}
-        aria-label={
-          favorite ? `Remove ${movie.title} from favorites` : `Add ${movie.title} to favorites`
-        }
-      >
-        &#9733;
-      </button>
+      </div>
     </article>
   );
 }
