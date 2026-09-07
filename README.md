@@ -1,25 +1,22 @@
 # 🎬 Movie Search Engine
-A simple and responsive React application that allows users to search for movies using a public API and view key details like posters, release dates, and descriptions.
+A responsive React application that allows users to search for movies using the TMDB API and explore detailed information such as posters, release dates, genres, runtime, and descriptions. Built to strengthen my front‑end development skills through real‑world API integration, component architecture, and clean UI design.
 
-## 🚧 Work in Progress
-This project is in its early stages. I’m actively building out the core features, refining the UI, and documenting progress as I go. More updates coming soon.
+## 🚀 Features
+- Search movies by title with debounce + clear button
 
-# 🚀 Features
-- Search for movies by title (search stays in the box, with debounce and a clear button)
-
-- Display movie posters, titles, release years, and descriptions
+- Display posters, titles, release years, and descriptions
 
 - Dedicated movie details page (overview, genres, runtime, rating)
 
-- Save favorites locally and view them on the Favorites page
+- Save favorites locally and view them on a Favorites page
 
-- Genre filters and sorting (popularity, rating, newest, title)
+- Genre filters + sorting (popularity, rating, newest, title)
 
 - Pagination and loading skeletons
 
 - Light / dark mode toggle
 
-- Responsive layout built with custom CSS
+- Responsive layout with custom CSS
 
 - Clean component structure (NavBar, MovieCard, Home, Favorites, MovieDetails)
 
@@ -32,26 +29,26 @@ This project is in its early stages. I’m actively building out the core featur
 
 - JavaScript (ES6+)
 
-- CSS
-
 - Vite
 
 - React Router
 
-- Movie API (TMDB)
+- CSS
 
-## 📦 Installation & Setup
+- TMDB API
+
+## 📦 Installation
 bash
-### # Clone the repository
+### Clone the repository
 git clone https://github.com/Romie321/movie-search-engine.git
 
-### # Navigate into the project folder
+### Navigate into the project folder
 cd movie-search-engine/frontend
 
-### # Install dependencies
+### Install dependencies
 npm install
 
-### # Start the development server
+### Start the development server
 npm run dev
 ## 📁 Project Structure
 Code
@@ -77,24 +74,34 @@ movie-search-engine/
 │   │   └── main.jsx
 │   └── package.json
 │── README.md
-## 🔮 Future Improvements
-- Add screenshots of the current UI
+## 🔮 Future Enhancements
+- Add UI screenshots
 
-- Improve search + genre filtering together (filter across all pages, not only the current page)
+- Improve global search + genre filtering across all pages
 
-- Optional infinite scroll instead of pagination
+- Optional infinite scroll mode
 
-## 📸 Screenshots
-(To be added once UI is ready.)
+## 🤝 Contributors
+A special thanks to **@echandsome** for contributing major features to this project, including:
+
+- Movie Details page
+
+- Genre filtering system
+
+- Light/Dark theme support
+
+- Home page UX improvements
+
+Your contributions helped shape the final version of this app — thank you!
 
 ## 📚 Purpose
-This project helps me practice:
+This project helped me practice:
 
-- React components
+- React component architecture
 
 - State management
 
-- API calls
+- API calls and async flows
 
 - Clean UI structure
 
